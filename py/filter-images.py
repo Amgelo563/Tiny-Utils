@@ -95,4 +95,5 @@ for originalimg in valid_images:
     image.save(os.path.join(FILTER_FOLDER, originalimg))
     debug_print('Everything done. Proceeding with next image.\n')
 
-print(f'Finished! You can find your images at {FILTER_FOLDER} :)')
+print(
+    f'\033[91mFinished! You can find your images at {FILTER_FOLDER} :)\033[0m')
