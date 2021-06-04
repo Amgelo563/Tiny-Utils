@@ -5,6 +5,6 @@ Some tiny scripts I like to keep just in case they're ever needed again on the f
 
 ## List of Languages
 
-* [🐍 Python](https://github.com/Amgelo563/Tiny-Utils/py)
+* [🐍 Python](https://github.com/Amgelo563/Tiny-Utils/tree/main/py)
 
 ---
