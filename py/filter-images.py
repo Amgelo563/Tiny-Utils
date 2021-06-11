@@ -43,13 +43,12 @@ OUTPUT_FOLDER = os.path.join(PATH, 'filter-output')
 TYPES = input(
     '\nPlease enter all the type of files you want to change, separated by a comma (eg: png,jpeg).\n\033[93m>\033[0m ').lower().replace(' ', '').split(',')
 
+TYPES = ['.' + str(extension) for extension in TYPES]
+
 while not all(item in VALID_EXTENSIONS for item in TYPES):
     print(
         '\033[91mYour input contains invalid extensions! Please try again.\n\033[93m>\033[0m ', end='')
-    print(TYPES)
     TYPES = input()
-
-TYPES = ['.' + str(extension) for extension in TYPES]
 
 unfiltered_entries = os.listdir(PATH)
 valid_images = list()
@@ -95,5 +94,4 @@ for originalimg in valid_images:
     image.save(os.path.join(FILTER_FOLDER, originalimg))
     debug_print('Everything done. Proceeding with next image.\n')
 
-print(
-    f'\033[91mFinished! You can find your images at {FILTER_FOLDER} :)\033[0m')
+print(f'\033[93mFinished! You can find your images at {FILTER_FOLDER} :)\033[0m')
