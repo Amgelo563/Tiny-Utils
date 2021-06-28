@@ -5,3 +5,5 @@
 * [🎨 Filter Images](https://github.com/Amgelo563/Tiny-Utils/blob/main/py/filter-images.py) - Apply a chosen filter to every single image on a folder.
 
 * [🎤 MP4 to MP3](https://github.com/Amgelo563/Tiny-Utils/blob/main/py/mp4-mp3.py) - Change every MP4 file on a folder to MP3.
+
+* [📓 Loggy](https://github.com/Amgelo563/Tiny-Utils/blob/main/py/loggy.py) - A useful logging module.
