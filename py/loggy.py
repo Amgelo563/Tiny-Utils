@@ -1,34 +1,35 @@
 r"""
-Loggy Module Usage
+📔 Loggy Module Usage
 
-First change the MAIN color using the set_type() function (because nobody likes using default values).
-You can use either a HEX string or a RGB tuple.
-    - Loggy.set_type('MAIN', '#f72585')
-    - Loggy.set_type('MAIN', '94d2bd')
-    - Loggy.set_type('MAIN', my_main_rgb_tuple)
+❗ First change the MAIN color using the set_type() function (because nobody likes using default values).
+🌈 You can use either a HEX string or a RGB tuple.
+    • Loggy.set_type('MAIN', '#f72585')
+    • Loggy.set_type('MAIN', '94d2bd')
+    • Loggy.set_type('MAIN', my_main_rgb_tuple)
 
-You can then proceed using the log() function to log messages to the console.
-    - Loggy.log('Hello world!')
-    - Loggy.log('A really bad thing happened!', type = 'ERROR')
-    - Loggy.log('Some debug info.', type = 'DEBUG')
+📩 You can then proceed using the log() function to log messages to the console.
+    • Loggy.log('Hello world!')
+    • Loggy.log('A really bad thing happened!', type = 'ERROR')
+    • Loggy.log('Some debug info.', type = 'DEBUG')
 
-You can also change the color of any type using the set_type() function (or even add your own types).
-    - Loggy.set_type('DEBUG', '#f1faee')      # Ew, white debug text.
-    - Loggy.set_type('WARNING', '#560bad')    # I like my warnings purple.
-    - Loggy.set_type('my_beloved_custom_type', '#94d2bd')
+🎨 You can also change the color of any type using the set_type() function (or even add your own types).
+    • Loggy.set_type('DEBUG', '#f1faee')      # Ew, white debug text.
+    • Loggy.set_type('WARNING', '#560bad')    # I like my warnings purple.
+    • Loggy.set_type('my_beloved_custom_type', '#94d2bd')
 
-Additionally, you can specify certain text arguments when logging information.
-    - Loggy.log('This text will really stand out.', type = 'MAIN', format_args = {'bold': True, 'underline': True})
-    - Loggy.log('I don't want to use a prefix on this one.', format_args = {'prefix': False})
-Valid arguments: prefix, separator, bold, italic, underline, strike.
+➕ Additionally, you can specify certain text arguments when logging information.
+    • Loggy.log('This text will really stand out.', type = 'MAIN', format_args = {'bold': True, 'underline': True})
+    • Loggy.log('I don't want to use a prefix on this one.', format_args = {'prefix': False})
+❔ Valid arguments: prefix, separator, bold, italic, underline, strike.
 
-If you ever need to color just a few words and make them stand out, use the colorize() function.
-    - Loggy.colorize('I will return a yellow, bold string', '#ee9b00', format_args = {'bold' = True})
-    - Loggy.colorize('I will return a white striked string instead.', 'FFFFFF', format_args = {'strike' = True})
+💬 If you ever need to color just a few words and make them stand out, use the colorize() function.
+    • Loggy.colorize('I will return a yellow, bold string', '#ee9b00', format_args = {'bold' = True})
+    • Loggy.colorize('I will return a white striked string instead.', 'FFFFFF', format_args = {'strike' = True})
 
-You can also set the dump_file boolean to True to dump whatever you log to a .log file, saved on your working directory.
-This file will obviously not contain any colors, but it will contain timestamps.
-    - Loggy.dump_file = True      # Whatever you log will now be saved on a .log file.
+🔽 You can also set the dump_file boolean to True to dump whatever you log to a .log file.
+❔ This file will be saved on your working directory, using __main__'s name. For example if Loggy is called from MyProject.py,
+  log will be saved as MyProject.log, alongside the MyProject.py file.
+    • Loggy.dump_file = True      # Whatever you log will now be saved on a .log file.
 
 """
 
