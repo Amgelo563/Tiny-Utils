@@ -47,7 +47,7 @@ REMOVE_COLOR_REGEX = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
 DEFAULT_COLOR = '#0077b6'  # ? I'm blue daba dee dabba daee
 SEPARATOR = '|'
 
-ANSI_COLOR_REGEX = re.compile(r'(?<=\033\[38;2;)(.*?)(?=m)')
+ANSI_COLOR_REGEX = re.compile(r'(?<=\033\[38;2;)(.*?)(?:m)')
 
 
 def hex_rgb(hexc):
