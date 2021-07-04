@@ -17,5 +17,5 @@ print(f"""
 
 \033[36mMore data: \033[0m\033[4mhttps://www.colorhexa.com/{hex_value}\033[0m
 
-\033[38;2;{red_value};{green_value};{blue_value}mThis is your color!: \033[48;2;{red_value};{green_value};{blue_value}m       \033[0m
+\033[38;2;{red_value};{green_value};{blue_value}mThis is your color: \033[48;2;{red_value};{green_value};{blue_value}m       \033[0m
 """)
